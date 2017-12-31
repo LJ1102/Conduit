@@ -44,7 +44,7 @@ namespace Conduit
       OpenFileDialog ofd = new OpenFileDialog();
 
       ofd.InitialDirectory = Environment.GetFolderPath(Environment.SpecialFolder.ProgramFiles);
-      ofd.Filter = "WinVICE executable (x64.exe)|x64.exe";
+      ofd.Filter = "WinVICE executable (x64.exe)|x64.exe|WinVICE compatible executable|*.exe";
 
       if (ofd.ShowDialog() == DialogResult.OK)
       {
@@ -57,7 +57,7 @@ namespace Conduit
       OpenFileDialog ofd = new OpenFileDialog();
 
       ofd.InitialDirectory = Environment.GetFolderPath(Environment.SpecialFolder.ProgramFiles);
-      ofd.Filter = "DOSBox executable (DOSBox.exe)|DOSBox.exe";
+      ofd.Filter = "DOSBox executable (DOSBox.exe)|DOSBox.exe|DOSBox compatible executable|*.exe";
 
       if (ofd.ShowDialog() == DialogResult.OK)
       {
